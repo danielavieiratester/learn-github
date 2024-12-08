@@ -1,0 +1,85 @@
+Git Environments
+
+- Working
+- Staging: to where you move your files so to after commit. Add  command.
+- Commit: new log with a hash commit
+
+Files States
+- Tracked: files that exists in the previous snnipshots.
+- Untracked
+
+Why ignore files?
+.gitignore
+- sensitive info
+- personal notes
+- system files
+That you don't want to share.
+
+Global Ignore File
+git config -- global core.excludesfile [file]
+
+Clearing the cache
+git rm -r --cached
+--cached is optional
+
+git push: envia as modificações
+git pull: solicita a subida da mudança para o main
+
+Source control manangement
+Sincronizar branches = merging
+Check point (commit)
+
+Website "https://git.scm.com/user/login" offers a terminal application where you can run git commands.
+Gitbash
+Hyper
+VSCode
+
+Node.js ferramentas para o website.
+
+Git add envia os arquivos para Stagging, área onde nós depois iremos comitar.
+
+Renomear um arquivo
+git mv "nome.extensão" "novonome.extensão"
+git status
+
+git acompanha as modificações desde o último commit.
+
+Showing difference about files
+git diff
+
+Exit use a tecla "q"
+
+git log --oneline
+Sem --oneline traz um monte de coisas.
+
+git diff "hash commit"
+
+git commit --amend
+
+git reset "hash"
+Esse comando irá unstaging the files modified.
+
+git reset --hard "hash"
+
+git log --oneline
+Exibe os commits
+
+Rebasing
+git rebase -i HEAD-3
+git rebase -i -root
+Para editar o histórico e reorganizar a ordem em que os commits devem ser feitos.
+
+Clonar uma branch
+git switch -c NAME
+git checkout -b NAME
+
+git branch: exibe quantas branches
+
+Para fazer o merge precisamos estar na branch principal:
+git switch main 
+
+Git flow
+- Feature/ fix branch
+- Make changes
+- Merge to master
+- Delete old branch
